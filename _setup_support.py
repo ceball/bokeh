@@ -141,13 +141,13 @@ def build_or_install_bokehjs():
         print("Error: Option '--build-js' only valid with 'install', 'develop', 'sdist', or 'build', exiting.")
         sys.exit(1)
 
-    if jsbuild:
-        build_js()
-        install_js()
-        return "built"
-    else:
-        install_js()
-        return "installed"
+#    if jsbuild:
+#        build_js()
+#        install_js()
+#        return "built"
+#    else:
+#        install_js()
+#        return "installed"
 
 def conda_rendering():
     return os.getenv("CONDA_BUILD_STATE" ,"junk") == "RENDER"
